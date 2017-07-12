@@ -1,0 +1,36 @@
+{
+  "name": "eslint-config-yp-base",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "nyc": {
+    "check-coverage": true,
+    "lines": 100,
+    "statements": 95,
+    "functions": 95,
+    "branches": 95,
+    "include": [
+      "index.js"
+    ],
+    "exclude": [],
+    "report-dir": "./coverage"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "export NODE_ENV=integration && ./node_modules/.bin/mocha -t 90000 ./test/**/*",
+    "coverage": "export NODE_ENV=integration && ./node_modules/.bin/nyc ./node_modules/.bin/mocha -t 90000 ./test/**/*",
+    "lint": "./node_modules/.bin/eslint --max-warnings 5 ./**/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1",
+    "nyc": "^10.3.2"
+  },
+  "dependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
