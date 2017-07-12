@@ -1,11 +1,8 @@
 language: node_js
-
 node_js: 6
-
-before_install:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
-
 deploy:
+  api_key:
+    secure: RX3xEXoGQKNg56gkxfj3urKUyAexx6XKqBVLCb93PdegVCh5Dazu1KJXbIZtSF64IgTiNtezY/uGLjy3OP5Q8DtUh6hlNDqENJLul3zfGU2xcAGhVXwZaCLO8WXbxY3l9QlMug++0CYvF+87c65D25QNuRWUjtVlYOWC2nZiiK7k3in7uuyHBBbmjZAOPcI/RwgdqxV2NUOJllSc8BL3mGX9GkGFlS5+Szi0TnwHnbjDctkfOkBTj942i06O1ZLwNTtiQyqHdwY2YQUFDHfuPRPHNu5MbCV1hk1VFzb+4gBqYmPcmJUZ34BcDIJrRqHC0FStPxldoOEHWH8sF4YAoWie7tz0QwTIimcQObh2hYG3Zwid8OzKhaR3TFnwsIPb1gPdw4GySNNHG4hEFW414XQy7g4G7sX/t9hl2zYsLrfRND0xh88tVXkv3F2lQs6lhEGkbVhUgGw8XeNwJ6yzm+/I1pIQ1L4RxQF6dFlIAH1J6B4vjCFZJIGbimD2B/UXBRx0w/tU4sifUdzVwDeX3ydwZydSPS7mkHwQk2IwkCIwPL5897xHWBiO3xr6bG34wGJa7WoV9D7dFAN39H1vXhmFM/+HAjbgC4WWCwFrRBNf/DzHds0k9anTcabenWPjvg0U7StjGot30oFSAeP2a0VPH20oY/67ftWVcxDGo00=
   email: manuelfelipe@gmail.com
   provider: npm
   on:
