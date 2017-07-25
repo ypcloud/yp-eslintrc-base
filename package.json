@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-yp-base",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.1.0",
+  "description": "eslint config for Yellow Pages.",
   "main": "index.js",
   "nyc": {
     "check-coverage": true,
@@ -14,6 +14,10 @@
     ],
     "exclude": [],
     "report-dir": "./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ypcloud/yp-eslintrc-base"
   },
   "scripts": {
     "start": "node .",
